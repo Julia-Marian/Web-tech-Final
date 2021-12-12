@@ -58,7 +58,7 @@ $result = mysqli_query($con, $s);
                         </td>
                         <td> <img class='mr-3' src='image/{$row['filename']}' width='70px'> <strong>{$row['name']}</strong></td>
                         <td style='width:150px;'> 
-                            <form method='POST' action='../actions/cartAction.php'>
+                            <form method='POST' action='cartAction.php'>
                                 <input style='text-align:center; width: 40px;' type='number' min='1' max='' name = 'qty' value ='{$row['quantity']}'>
                                 <input type='hidden' name = 'p_id' value='{$row['id']}'>
                                 <button style='text-align:center; width: 65px;' class='btn btn-primary btn-sm' name='updateCartButton' type='submit' > Update </button>
