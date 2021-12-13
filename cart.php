@@ -54,13 +54,22 @@ $result = mysqli_query($con, $s);
                     $total = $total + $row['Price'] * $row['quantity'];
                     echo "<tr>
                         <td style='width:50px'> 
+<<<<<<< HEAD
                             <a href='cartAction.php?deleteID={$row['id']}'><i class='fas fa-trash btn btn-lg text-danger'></i></a>
+=======
+                            <a href='../actions/cartAction.php?deleteID={$row['id']}'><i class='fas fa-trash btn btn-lg text-danger'></i></a>
+>>>>>>> eb8b70e5caae4f199d035a974eb3b837d5dacb2f
                         </td>
                         <td> <img class='mr-3' src='image/{$row['filename']}' width='70px'> <strong>{$row['name']}</strong></td>
                         <td style='width:150px;'> 
                             <form method='POST' action='cartAction.php'>
+<<<<<<< HEAD
                                 <input style='text-align:center; width: 40px;' type='number' min='1' max='' name = 'quantity' value ='{$row['quantity']}'>
                                 <input type='hidden' name = 'vehicle_id' value='{$row['id']}'>
+=======
+                                <input style='text-align:center; width: 40px;' type='number' min='1' max='' name = 'qty' value ='{$row['quantity']}'>
+                                <input type='hidden' name = 'p_id' value='{$row['id']}'>
+>>>>>>> eb8b70e5caae4f199d035a974eb3b837d5dacb2f
                                 <button style='text-align:center; width: 65px;' class='btn btn-primary btn-sm' name='updateCartButton' type='submit' > Update </button>
                              </form>
                         </td>
