@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+#container{
+    max-width: 1600px;
+    margin: auto;
+    height: 100vh;
+    background: #eaf5ff;
+    overflow: auto;
+}
+
+
+
+.card{
+    float: left;
+    width: 33.33%;
+    padding: 80px;
+    height: 380px;
+}
+
+.image-resize{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 0.5rem;
+
+}
+
+.image-resize:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.h1{
+
+}
+
+.article h1::after{
+    content: '';
+    background-color: #007bff;
+    display: block;
+    height: 3px;
+    width: 250px;
+    margin: 20px auto 5px;
