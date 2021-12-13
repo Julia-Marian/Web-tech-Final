@@ -67,9 +67,7 @@ $result = mysqli_query($con, $s);
                                 <input style='text-align:center; width: 40px;' type='number' min='1' max='' name = 'quantity' value ='{$row['quantity']}'>
                                 <input type='hidden' name = 'vehicle_id' value='{$row['id']}'>
 =======
-                                <input style='text-align:center; width: 40px;' type='number' min='1' max='' name = 'qty' value ='{$row['quantity']}'>
-                                <input type='hidden' name = 'p_id' value='{$row['id']}'>
->>>>>>> eb8b70e5caae4f199d035a974eb3b837d5dacb2f
+                              
                                 <button style='text-align:center; width: 65px;' class='btn btn-primary btn-sm' name='updateCartButton' type='submit' > Update </button>
                              </form>
                         </td>
